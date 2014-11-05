@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+
+<head>
+  <link href='http://fonts.googleapis.com/css?family=Oswald:400,300' rel='stylesheet' type='text/css'>
+  <link href='http://fonts.googleapis.com/css?family=Lato:300,400' rel='stylesheet' type='text/css'>
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/style.css">
+
+  <script src="js/jQuery.js"></script>
+
+  <script src="js/helper.js"></script>
+
+  <script type="text/javascript" src="http://maps.googleapis.com/maps/api/js?libraries=places"></script>
+  <script type="text/javascript" src="https://www.google.com/jsapi?autoload={'modules':[{'name':'visualization','version':'1','packages':['corechart']}]}"></script>
+   
+  <title>Victoria Mudraya Web Developer Resume</title>
+  <meta name="viewport" content="width=device-width">
+</head>
+<body>
+  <div id="main">
+    <div class="container">
+      <div class="row">
+        <div id="header" class="col-md-12">
+          <div id="subheader" class="col-md-12">
+          </div>
+    </div>
+  </div>
+</div>
+<div class="container">
+      <div class="row">
+        <div id="photo" class="col-md-3"></div>
+        <div id="topContacts" class="col-md-3"></div>
+        <div id="piechart" style="width: 500px; height: 250px;" class="col-md-6"></div>
+        
+      </div>
+    </div>
+    <div class="container">
+      <div class="row">
+    <div style='clear: both;'></div>
+    <div id="workExperience" class='gray'>
+      <h2>Work Experience</h2>
+    </div>
+    <div id="projects">
+      <h2>Projects</h2>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-md-8">
+    <div id="education" class='gray'>
+      <h2>Education</h2>
+    </div>
+  </div>
+  <div class="col-md-4"> 
+    <div id="skills">
+      <h2>Skills</h2>
+    </div>
+    <div id="languages">
+      <h2>Languages</h2>
+    </div>
+  </div>
+</div>
+<div class="row">
+    <div id="mapDiv">
+      <h2>Where I've Lived and Worked</h2>
+    </div>
+    <div id="letsConnect" class='dark-gray'>
+      <h2 class='blue-text'><a href="mailto:victoria.mudraya@gmail.com">Let's Connect</a></h2>
+    </div>
+  </div>
+</div>
+</div>
+  <script src="js/resumeBuilder.js"></script>
+  <script type="text/javascript">
+
+  if(document.getElementsByClassName("flex-item").length === 0) {
+    document.getElementById("topContacts").style.display = "none";
+  }
+  if(document.getElementsByTagName("h1").length === 0) {
+    document.getElementById("header").style.display = "none";
+  }
+  if(document.getElementsByClassName("work-entry").length === 0) {
+    document.getElementById("workExperience").style.display = "none";
+  }
+  if(document.getElementsByClassName("project-entry").length === 0) {
+    document.getElementById("projects").style.display = "none";
+  }
+  if(document.getElementsByClassName("education-entry").length === 0) {
+    document.getElementById("education").style.display = "none";
+  }
+  if(document.getElementsByClassName("flex-item").length === 0) {
+    document.getElementById("letsConnect").style.display = "none";
+  }
+  if(document.getElementById("map") == undefined) {
+    document.getElementById("mapDiv").style.display = "none";
+  }
+  </script>
+</body>
